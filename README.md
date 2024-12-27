@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @shoopy7
 - 👀 I’m interested in cybersecurity and AI/ML 
-- 🌱 I’m currently learning so many things!!! AI/ML is holding my curiosity steady
-
+- 🌱 I’m currently learning so many things!!! 
 
 <!---
 shoopy7/shoopy7 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
