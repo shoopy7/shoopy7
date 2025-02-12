@@ -1,0 +1,29 @@
+gh auth login
+gh repo clone <YOUR USERNAME>/<REPOSITORY-NAME>
+cd <REPOSITORY-NAME>
+git checkout -b my-branch 
+ls
+pwd
+git status
+
+#create file and add text
+touch class.md
+cat > class.md  ####multiple lines to add, cant correct typos cntrl+c to cancel, cntrl+d to end
+
+#to begin tracking new file, commit and push to create pullrequest on github
+git add class.md 
+git status
+git commit -m 'minor changes'
+git push origin my-branch 
+
+# go to github to create pullrequest
+# merge 2 branches once pullrequest complete
+git checkout main
+git pull origin main
+git merge my-branch
+git commit -m "Merge my-branch into main"
+git push origin main
+
+#CLEAN up feature branch:
+git branch -d my-branch
+git push origin --delete my-branch
