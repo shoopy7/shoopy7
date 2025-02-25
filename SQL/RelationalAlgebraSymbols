@@ -58,6 +58,8 @@ binary operators
 
 		inner join   join
 ⨝		Natural join		join		
+			note:  A NATURAL JOIN can be an INNER join, a LEFT OUTER join, or a RIGHT OUTER join. The default is INNER join.
+
 ⨝ condition		 𝚹  Theta join (same as natural join but with a  ⨝ condition)  
 				if the condition is = then it's an equijoin
 			
