@@ -1,0 +1,54 @@
+                                      Relational Algebra symbols 
+NO DUPLICATES~~~~!!!!!!!!!~~~~~~~~~~~~~~~
+unary operators
+𝜎		Selection			rows
+
+π		Projection			columns
+
+𝒢 (calligraphic G)	 or	𝛄   (gamma)	 for grouping with 	Aggregate function
+example	gamma a; count(*)->x ( R )
+order the result by the first column (default is ascending) and the second column descending:γ a, b ; sum(c)->x ( Customer )
+(NOTE:  If no grouping, then the entire table is the group)
+
+Binary operators
+			unions
+
+⋃		Union 
+
+⋂		Intersection
+
+
+			mathematical
+＋
+－
+×
+÷
+
+-		Difference, Set difference
+
+×		Product, Cartesian Product.  Used OFTEN when looking at multiple tables
+
+÷		Division
+
+		
+𝜌 	𝝔	rename (rho)
+
+τ	τ	order by (tau) 	asc		desc		example	tau a asc, b desc ( R )
+
+
+			Joins
+
+⨝		Natural join		join		
+⨝ condition		 𝚹  Theta join (same as natural join but with a  ⨝ condition)  inner join   join	
+⟕	⟕	Left outer join	left join
+⟖	⟖	Right outer join	right join
+
+⟗	⟗	Full outer join
+
+Logical symbols
+¬	￢		∧	∧		∨  ∨
+NOT			AND			OR
+Other
+ω      
+null
+
