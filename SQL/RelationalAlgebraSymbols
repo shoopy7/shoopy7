@@ -9,8 +9,11 @@ unary operators
 π		Projection			columns
 
 𝒢 (calligraphic G)	 or	𝛄   (gamma)	 for grouping with 	Aggregate function
+
 example	gamma a; count(*)->x ( R )
-order the result by the first column (default is ascending) and the second column descending:γ a, b ; sum(c)->x ( Customer )
+order the result by the first column (default is ascending) 
+and the second column descending:  γ a, b ; sum(c)->x ( Customer )
+
 (NOTE:  If no grouping, then the entire table is the group)
 
 
@@ -47,7 +50,7 @@ binary operators
 		
 𝜌 	𝝔	rename (rho)
 
-τ	τ	order by (tau) 	asc		desc		example	tau a asc, b desc ( R )
+τ	τ	order by (tau) 	asc	desc		example	tau a asc, b desc ( R )
 
 
 
@@ -66,7 +69,7 @@ binary operators
 
 
 Logical symbols
-¬	￢		∧	∧		∨  ∨
+¬	￢		∧	∧		∨  	∨
 NOT			AND			OR
 
 
