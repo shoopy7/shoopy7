@@ -6,15 +6,18 @@ NO DUPLICATES~~~~~
 unary operators
 𝜎		Selection			rows
 
-π		Projection			columns
+π		Projection			columns ; what is displayed
 
 𝒢 (calligraphic G)	 or	𝛄   (gamma)	 for grouping with 	Aggregate function
+	example:	gamma a; count(*)->x ( R )
+	represents the "group by" operation where you group the tuples in relation "R" based on 
+	attribute "a", then aggregate by counting the number of tuples within each group, storing 
+	the count in a new attribute named "x" within the resulting relation
+	
+	order the result by the first column (default is ascending) 
+	and the second column descending:  γ a, b ; sum(c)->x ( Customer )
 
-example	gamma a; count(*)->x ( R )
-order the result by the first column (default is ascending) 
-and the second column descending:  γ a, b ; sum(c)->x ( Customer )
-
-(NOTE:  If no grouping, then the entire table is the group)
+	(NOTE:  If no grouping, then the entire table is the group)
 
 
 binary operators
@@ -50,7 +53,7 @@ binary operators
 		
 𝜌 	𝝔	rename (rho)
 
-τ	τ	order by (tau) 	asc	desc		example	tau a asc, b desc ( R )
+τ	τ	order by (tau) 	asc	desc	example:	tau a asc, b desc ( R )
 
 
 
@@ -58,10 +61,11 @@ binary operators
 
 		inner join   join
 ⨝		Natural join		join		
-			note:  A NATURAL JOIN can be an INNER join, a LEFT OUTER join, or a RIGHT OUTER join. The default is INNER join.
+			note:  A NATURAL JOIN can be an INNER join, a LEFT OUTER join, 
+			or a RIGHT OUTER join. The default is INNER join.
 
-⨝ condition		 𝚹  Theta join (same as natural join but with a  ⨝ condition)  
-				if the condition is = then it's an equijoin
+⨝ condition	𝚹  Theta join (same as natural join but with a  ⨝ condition)  
+			if the condition is = then it's an equijoin
 			
 		outer join
 ⟕	⟕	Left outer join	left join
